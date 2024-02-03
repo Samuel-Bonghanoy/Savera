@@ -1,7 +1,8 @@
+import { BiStats } from 'react-icons/bi';
+import { FaHome } from 'react-icons/fa';
 import { FiPlusCircle } from 'react-icons/fi';
-import { HiHomeModern } from 'react-icons/hi2';
-import { IoMdOptions } from 'react-icons/io';
-import { MdAccountCircle, MdQueryStats } from 'react-icons/md';
+import { MdAccountCircle } from 'react-icons/md';
+import { SlOptions } from 'react-icons/sl';
 
 export default function MenuBar(): JSX.Element {
   return (
@@ -12,7 +13,7 @@ export default function MenuBar(): JSX.Element {
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <HiHomeModern size={'2em'} />
+            <FaHome size={'2em'} />
             <span className="block text-xs tab tab-home">Home</span>
           </a>
           <a
@@ -33,14 +34,14 @@ export default function MenuBar(): JSX.Element {
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <IoMdOptions size={'2em'} />
+            <SlOptions size={'2em'} />
             <span className="block text-xs tab tab-home">Options</span>
           </a>
           <a
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <MdQueryStats size={'2em'} />
+            <BiStats size={'2em'} />
             <span className="block text-xs tab tab-home">Stats</span>
           </a>
         </div>
