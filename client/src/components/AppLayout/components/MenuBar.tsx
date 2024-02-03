@@ -1,4 +1,7 @@
-import { MdAccountBox, MdHome, MdMoney } from 'react-icons/md';
+import { FiPlusCircle } from 'react-icons/fi';
+import { HiHomeModern } from 'react-icons/hi2';
+import { IoMdOptions } from 'react-icons/io';
+import { MdAccountCircle, MdQueryStats } from 'react-icons/md';
 
 export default function MenuBar(): JSX.Element {
   return (
@@ -9,22 +12,36 @@ export default function MenuBar(): JSX.Element {
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <MdHome size={'2em'} />
+            <HiHomeModern size={'2em'} />
             <span className="block text-xs tab tab-home">Home</span>
           </a>
           <a
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <MdAccountBox size={'2em'} />
+            <MdAccountCircle size={'2em'} />
             <span className="block text-xs tab tab-home">Account</span>
           </a>
           <a
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <MdMoney size={'2em'} />
-            <span className="block text-xs tab tab-home">Budget</span>
+            <FiPlusCircle size={'2em'} />
+            <span className="block text-xs tab tab-home">Add Log</span>
+          </a>
+          <a
+            href="#"
+            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
+          >
+            <IoMdOptions size={'2em'} />
+            <span className="block text-xs tab tab-home">Options</span>
+          </a>
+          <a
+            href="#"
+            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
+          >
+            <MdQueryStats size={'2em'} />
+            <span className="block text-xs tab tab-home">Stats</span>
           </a>
         </div>
       </section>
