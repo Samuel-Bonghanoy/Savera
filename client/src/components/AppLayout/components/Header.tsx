@@ -27,6 +27,7 @@ export default function Header(): JSX.Element {
             </div>
 
             <a
+              title="notifications"
               href="#"
               className="block shrink-0 rounded-full bg-white p-2.5 text-gray-600 shadow-sm hover:text-gray-700"
             >
