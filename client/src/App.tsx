@@ -1,10 +1,16 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import AppLayout from './components/AppLayout';
+import BudgetDashboard from './pages/budget-dashboard';
 
 const router = createBrowserRouter([
   {
-    path: '/',
     element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <BudgetDashboard />,
+      },
+    ],
   },
 ]);
 

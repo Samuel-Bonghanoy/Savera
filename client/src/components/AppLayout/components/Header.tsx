@@ -3,7 +3,7 @@ import Logo from '../../../assets/logo.svg';
 
 export default function Header(): JSX.Element {
   return (
-    <header className="bg-gray-50">
+    <header className="bg-stone-500">
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:px-8">
         <div className="flex items-center justify-end gap-4">
           <div className="flex items-center gap-4">
@@ -41,14 +41,6 @@ export default function Header(): JSX.Element {
             <span className="sr-only">Profile</span>
             <img alt="Man" src={Logo} className="object-cover w-10 h-10 rounded-full" />
           </a>
-        </div>
-
-        <div className="mt-8">
-          <h1 className="text-2xl font-bold text-gray-900 sm:text-3xl">Welcome Back, Barry!</h1>
-
-          <p className="mt-1.5 text-sm text-gray-500">
-            Your website has seen a 52% increase in traffic in the last month. Keep it up! 🚀
-          </p>
         </div>
       </div>
     </header>
