@@ -1,6 +1,6 @@
-import { BsBarChartFill, BsHouseExclamationFill, BsPersonFill } from 'react-icons/bs';
-import { MdAddCircle } from 'react-icons/md';
-import { TbSettingsFilled } from 'react-icons/tb';
+import { BsBarChartLine, BsPersonBadge } from 'react-icons/bs';
+import { IoSettingsOutline } from 'react-icons/io5';
+import { RiHome7Line, RiMenuAddLine } from 'react-icons/ri';
 
 export default function MenuBar(): JSX.Element {
   return (
@@ -11,35 +11,35 @@ export default function MenuBar(): JSX.Element {
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <BsHouseExclamationFill size={'1.5em'} />
+            <RiHome7Line size={'1.5em'} />
             <span className="block text-xs tab tab-home">Home</span>
           </a>
           <a
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <BsPersonFill size={'1.5em'} />
+            <BsPersonBadge size={'1.5em'} />
             <span className="block text-xs tab tab-home">Account</span>
           </a>
           <a
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <MdAddCircle size={'1.5em'} />
+            <RiMenuAddLine size={'1.5em'} />
             <span className="block text-xs tab tab-home">Add Log</span>
           </a>
           <a
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <TbSettingsFilled size={'1.5em'} />
+            <IoSettingsOutline size={'1.5em'} />
             <span className="block text-xs tab tab-home">Options</span>
           </a>
           <a
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <BsBarChartFill size={'1.5em'} />
+            <BsBarChartLine size={'1.5em'} />
             <span className="block text-xs tab tab-home">Stats</span>
           </a>
         </div>
