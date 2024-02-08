@@ -14,7 +14,7 @@ export default function Header(): JSX.Element {
                 className="w-full h-10 text-sm bg-white border-none rounded-full shadow-sm pe-10 ps-4 sm:w-56"
                 id="search"
                 type="search"
-                placeholder="Search website..."
+                placeholder="Filter logs..."
               />
 
               <button
