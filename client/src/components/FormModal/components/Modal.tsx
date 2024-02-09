@@ -1,4 +1,5 @@
 import React from 'react';
+import { RiMenuAddLine } from 'react-icons/ri';
 
 interface ModalProps {
   children: React.ReactNode;
@@ -9,10 +10,13 @@ export default function Modal({ children }: ModalProps): JSX.Element {
     <div>
       <button
         type="button"
-        className="inline-flex items-center px-4 py-3 text-sm font-semibold text-white bg-blue-600 border border-transparent rounded-lg gap-x-2 hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+        className="inline-flex items-center pt-2 pb-1 text-sm font-semibold text-black border border-transparent rounded-lg gap-x-2 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
         data-hs-overlay="#hs-slide-up-animation-modal"
       >
-        Open modal
+        <span className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent">
+          <RiMenuAddLine size={'1.5em'} />
+          <span className="block text-xs tab tab-home">Add Log</span>
+        </span>
       </button>
 
       <div

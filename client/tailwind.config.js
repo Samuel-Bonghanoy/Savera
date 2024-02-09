@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import preline from 'preline/plugin.js';
+import daisyui from 'daisyui';
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
@@ -10,5 +11,5 @@ export default {
       },
     },
   },
-  plugins: [preline],
+  plugins: [preline, daisyui],
 };

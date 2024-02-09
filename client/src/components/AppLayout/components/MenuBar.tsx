@@ -1,6 +1,7 @@
+import FormModal from '../../FormModal';
 import { BsBarChartLine, BsPersonBadge } from 'react-icons/bs';
 import { IoSettingsOutline } from 'react-icons/io5';
-import { RiHome7Line, RiMenuAddLine } from 'react-icons/ri';
+import { RiHome7Line } from 'react-icons/ri';
 
 export default function MenuBar(): JSX.Element {
   return (
@@ -21,13 +22,7 @@ export default function MenuBar(): JSX.Element {
             <BsPersonBadge size={'1.5em'} />
             <span className="block text-xs tab tab-home">Account</span>
           </a>
-          <a
-            href="#"
-            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
-          >
-            <RiMenuAddLine size={'1.5em'} />
-            <span className="block text-xs tab tab-home">Add Log</span>
-          </a>
+          <FormModal />
           <a
             href="#"
             className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
