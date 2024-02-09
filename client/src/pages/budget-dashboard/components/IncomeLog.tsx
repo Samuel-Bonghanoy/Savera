@@ -1,7 +1,7 @@
 export default function IncomeLog(): JSX.Element {
   return (
     <div>
-      <article className="flex items-end justify-between p-6 bg-white border border-gray-200 rounded-lg">
+      <article className="flex items-end justify-between p-4 bg-white border border-gray-200 rounded-lg">
         <div>
           <p className="text-sm text-accent">Allowance</p>
 
