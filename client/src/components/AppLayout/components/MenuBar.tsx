@@ -1,30 +1,41 @@
-import { MdAccountBox, MdHome, MdMoney } from 'react-icons/md';
+import FormModal from '../../FormModal';
+import { BsBarChartLine, BsPersonBadge } from 'react-icons/bs';
+import { IoSettingsOutline } from 'react-icons/io5';
+import { RiHome7Line } from 'react-icons/ri';
 
 export default function MenuBar(): JSX.Element {
   return (
-    <div className="w-full h-screen">
-      <section id="bottom-navigation" className="fixed inset-x-0 bottom-0 z-10 block bg-white shadow">
+    <div className="w-full h-full ">
+      <section id="bottom-navigation" className="fixed inset-x-0 bottom-0 z-10 block py-2 shadow bg-main">
         <div id="tabs" className="flex items-center justify-between">
           <a
             href="#"
-            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-teal-500 hover:text-teal-500"
+            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <MdHome size={'2em'} />
+            <RiHome7Line size={'1.5em'} />
             <span className="block text-xs tab tab-home">Home</span>
           </a>
           <a
             href="#"
-            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-teal-500 hover:text-teal-500"
+            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <MdAccountBox size={'2em'} />
+            <BsPersonBadge size={'1.5em'} />
             <span className="block text-xs tab tab-home">Account</span>
+          </a>
+          <FormModal />
+          <a
+            href="#"
+            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
+          >
+            <IoSettingsOutline size={'1.5em'} />
+            <span className="block text-xs tab tab-home">Options</span>
           </a>
           <a
             href="#"
-            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-teal-500 hover:text-teal-500"
+            className="flex flex-col items-center justify-center w-full pt-2 pb-1 text-center focus:text-accent hover:text-accent"
           >
-            <MdMoney size={'2em'} />
-            <span className="block text-xs tab tab-home">Budget</span>
+            <BsBarChartLine size={'1.5em'} />
+            <span className="block text-xs tab tab-home">Stats</span>
           </a>
         </div>
       </section>
