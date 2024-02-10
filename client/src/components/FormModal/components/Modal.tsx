@@ -18,13 +18,12 @@ export default function Modal({ children }: ModalProps): JSX.Element {
         </div>
       </button>
       <dialog id="my_modal_2" className="modal">
-        <div className="modal-box">
-          <h3 className="text-lg font-bold">Hello!</h3>
-          <p className="py-4">Press ESC key or click outside to close</p>
+        <div className="modal-box bg-main">
+          {children}
+          <form method="dialog" className="modal-backdrop">
+            <button className="bg-white">close</button>
+          </form>
         </div>
-        <form method="dialog" className="modal-backdrop">
-          <button>close</button>
-        </form>
       </dialog>
     </div>
   );
