@@ -21,7 +21,7 @@ export default function Modal({ children }: ModalProps): JSX.Element {
         <div className="modal-box bg-main">
           {children}
           <form method="dialog" className="modal-backdrop">
-            <button className="bg-white">close</button>
+            <button className="py-2 mt-2 font-semibold text-black bg-red-300 rounded-md">Close</button>
           </form>
         </div>
       </dialog>
