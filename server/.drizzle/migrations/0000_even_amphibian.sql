@@ -9,10 +9,10 @@ CREATE TABLE `budgets` (
 	`expense_id` int AUTO_INCREMENT NOT NULL,
 	`goal_amount` float NOT NULL,
 	`description` varchar(256) NOT NULL,
-	`user_id` int AUTO_INCREMENT NOT NULL,
-	`account_id` int AUTO_INCREMENT NOT NULL,
+	`user_id` int NOT NULL,
+	`account_id` int NOT NULL,
 	`start_date` timestamp DEFAULT (now()),
-	`end_date` timestamp NOT NULL,
+	`end_date` timestamp DEFAULT (now()) NOT NULL,
 	CONSTRAINT `budgets_expense_id` PRIMARY KEY(`expense_id`)
 );
 --> statement-breakpoint
@@ -20,7 +20,7 @@ CREATE TABLE `expenses` (
 	`expense_id` int AUTO_INCREMENT NOT NULL,
 	`amount` float NOT NULL,
 	`description` varchar(256) NOT NULL,
-	`expense_type_id` int AUTO_INCREMENT NOT NULL,
+	`expense_type_id` int NOT NULL,
 	CONSTRAINT `expenses_expense_id` PRIMARY KEY(`expense_id`)
 );
 --> statement-breakpoint
@@ -35,7 +35,7 @@ CREATE TABLE `incomes` (
 	`income_id` int AUTO_INCREMENT NOT NULL,
 	`amount` float NOT NULL,
 	`description` varchar(256) NOT NULL,
-	`income_type_id` int AUTO_INCREMENT NOT NULL,
+	`income_type_id` int NOT NULL,
 	CONSTRAINT `incomes_income_id` PRIMARY KEY(`income_id`)
 );
 --> statement-breakpoint

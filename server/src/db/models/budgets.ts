@@ -8,11 +8,9 @@ export const budgets = mysqlTable("budgets", {
   name: varchar("description", { length: 256 }).notNull(),
   userId: int("user_id")
     .notNull()
-    .autoincrement()
     .references(() => users.id),
   accountId: int("account_id")
     .notNull()
-    .autoincrement()
     .references(() => accounts.id),
   startDate: timestamp("start_date").defaultNow(),
   endDate: timestamp("end_date").notNull()

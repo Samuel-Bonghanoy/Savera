@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev src/index.ts",
-    "db:generate": "drizzle-kit generate:mysql"
+    "db:generate": "drizzle-kit generate:mysql",
+    "db:migrate": "ts-node --files src/db/migrator.ts"
   },
   "author": "",
   "license": "ISC",

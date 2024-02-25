@@ -8,6 +8,13 @@
       "when": 1708872381944,
       "tag": "0000_even_amphibian",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1708874162573,
+      "tag": "0001_true_daredevil",
+      "breakpoints": true
     }
   ]
 }

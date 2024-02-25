@@ -7,7 +7,6 @@ export const expenses = mysqlTable("expenses", {
   description: varchar("description", { length: 256 }).notNull(),
   incomeTypeId: int("expense_type_id")
     .notNull()
-    .autoincrement()
     .references(() => expenseTypes.id)
 });
 
