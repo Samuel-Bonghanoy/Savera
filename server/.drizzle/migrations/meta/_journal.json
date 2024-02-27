@@ -15,6 +15,20 @@
       "when": 1708874162573,
       "tag": "0001_true_daredevil",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1709043681550,
+      "tag": "0002_sloppy_anita_blake",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "5",
+      "when": 1709044039507,
+      "tag": "0003_icy_red_hulk",
+      "breakpoints": true
     }
   ]
 }

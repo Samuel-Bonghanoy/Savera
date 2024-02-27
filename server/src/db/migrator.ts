@@ -1,10 +1,11 @@
 import { migrate } from "drizzle-orm/mysql2/migrator";
-import { drizzle } from "drizzle-orm/mysql2";
-import path from "path";
 import { poolConnection } from "./config/db.config";
+import path from "path";
+import { db } from "./db";
 
-console.log("hi", process.env.PASSWORD);
-
-migrate(drizzle(poolConnection), {
+migrate(db, {
   migrationsFolder: path.resolve(".drizzle", "migrations")
-}).then(() => console.log("migration success"));
+}).then(() => {
+  poolConnection.end();
+  console.log("migration success");
+});

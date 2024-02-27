@@ -1,0 +1,1 @@
+ALTER TABLE `incomes` MODIFY COLUMN `amount` float NOT NULL;
